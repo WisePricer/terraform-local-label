@@ -7,18 +7,21 @@
 #   New input tags_asg -> tags_asg with standard tags added
 
 module "autoscaling_group" {
-  source  = "devops-workflow/boolean/local"
-  version = "0.1.0"
+  #source  = "devops-workflow/boolean/local"
+  #version = "0.1.0"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
   value   = "${var.autoscaling_group}"
 }
 module "namespace-env" {
-  source  = "devops-workflow/boolean/local"
-  version = "0.1.0"
+  #source  = "devops-workflow/boolean/local"
+  #version = "0.1.0"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
   value   = "${var.namespace-env}"
 }
 module "namespace-org" {
-  source  = "devops-workflow/boolean/local"
-  version = "0.1.0"
+  #source  = "devops-workflow/boolean/local"
+  #version = "0.1.0"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
   value   = "${var.namespace-org}"
 }
 
