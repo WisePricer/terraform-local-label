@@ -9,19 +9,22 @@
 module "autoscaling_group" {
   #source  = "devops-workflow/boolean/local"
   #version = "0.1.0"
-  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  #source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git"
   value   = "${var.autoscaling_group}"
 }
 module "namespace-env" {
   #source  = "devops-workflow/boolean/local"
   #version = "0.1.0"
-  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  #source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git"
   value   = "${var.namespace-env}"
 }
 module "namespace-org" {
   #source  = "devops-workflow/boolean/local"
   #version = "0.1.0"
-  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  #source  = "git::https://github.com/WisePricer/terraform-local-boolean.git?ref=tags/v0.1.1"
+  source  = "git::https://github.com/WisePricer/terraform-local-boolean.git"
   value   = "${var.namespace-org}"
 }
 
