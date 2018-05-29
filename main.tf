@@ -6,10 +6,6 @@
 #   Create tags_asg list from tags map. If possible
 #   New input tags_asg -> tags_asg with standard tags added
 
-module "autoscaling_group" {
-  source  = "git::https://github.com/WiserSolutions/terraform-local-boolean.git"
-  value   = "${var.autoscaling_group}"
-}
 module "namespace-env" {
   source  = "git::https://github.com/WiserSolutions/terraform-local-boolean.git"
   value   = "${var.namespace-env}"
